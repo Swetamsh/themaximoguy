@@ -1,0 +1,86 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Soft Blue Color Palette */
+    --background: 210 50% 98%; /* Very light soft blue background */
+    --foreground: 210 40% 20%; /* Dark blue-gray text */
+
+    --card: 210 40% 96%; /* Soft, pale blue card background */
+    --card-foreground: 210 40% 20%;
+
+    --popover: 210 40% 96%;
+    --popover-foreground: 210 40% 20%;
+
+    /* Primary Color - Soft Cornflower Blue */
+    --primary: 220 70% 65%; 
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary Color - Soft Pastel Blue */
+    --secondary: 200 60% 75%; 
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 30% 90%;
+    --muted-foreground: 210 40% 40%;
+
+    /* Accent - Soft Sky Blue */
+    --accent: 195 70% 70%; 
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 85%;
+    --input: 210 20% 85%;
+    --ring: 220 70% 65%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Dark mode soft blue theme */
+    --background: 220 20% 10%; /* Deep blue-navy background */
+    --foreground: 210 40% 95%;
+
+    --card: 220 20% 15%;
+    --card-foreground: 210 40% 95%;
+
+    --popover: 220 20% 15%;
+    --popover-foreground: 210 40% 95%;
+
+    /* Dark Soft Cornflower Blue */
+    --primary: 220 70% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Dark Pastel Blue */
+    --secondary: 200 60% 60%; 
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 20% 20%;
+    --muted-foreground: 210 40% 75%;
+
+    /* Dark Sky Blue */
+    --accent: 195 70% 55%; 
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 220 20% 20%;
+    --input: 220 20% 20%;
+    --ring: 220 70% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

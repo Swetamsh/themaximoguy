@@ -1,0 +1,21 @@
+{
+  "gitMCP": {
+    "server": {
+      "host": "localhost",
+      "port": 3000,
+      "protocol": "http"
+    },
+    "repositories": {
+      "maximo-landing-zone": {
+        "path": ".",
+        "branch": "main"
+      }
+    },
+    "settings": {
+      "autoSync": true,
+      "syncInterval": 5000,
+      "maxRetries": 3,
+      "retryDelay": 1000
+    }
+  }
+} 
